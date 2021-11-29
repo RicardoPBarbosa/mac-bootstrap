@@ -1,0 +1,22 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "next", "next/core-web-vitals", "plugin:prettier/recommended"],
+  "rules": {
+    // TypeScript's types for component props instead
+    "react/prop-types": "off",
+    // No need to import React when using Next.js
+    "react/react-in-jsx-scope": "off",
+    // This rule is not compatible with Next.js"s <Link /> components
+    "jsx-a11y/anchor-is-valid": "off",
+    "complexity": ["error", 15],
+    "no-multiple-empty-lines": "error",
+    "prefer-const": "error",
+    "curly": "error",
+    "no-console": "warn",
+    "max-len": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }]
+  }
+}

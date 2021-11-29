@@ -1,0 +1,11 @@
+**/node_modules/*
+**/out/*
+**/.next/*
+yarn.lock
+package-lock.json
+public
+postcss.config.js
+tailwind.config.js
+next.config.js
+lint-staged.config.js
+next-i18next.config.js
